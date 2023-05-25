@@ -1,0 +1,151 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px;
+  background-color: rgb(56, 54, 54);
+  font-family: Calibri;
+}
+
+/* NAVBAR-STARTS */
+
+.header {
+  width: 100vw;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 30px black;
+  /* margin-top: 0px; */
+  top: 0px;
+  position: fixed;
+}
+.logo-holder {
+  width: 100px;
+  height: 70px;
+}
+.logo-holder img {
+  width: 100%;
+  height: 100%;
+  position: static;
+}
+.fetch-btn {
+  color: white;
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 300px;
+  background-color: #1a3b7d;
+  border: 1px solid #1a3b7d;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.fetch-btn:hover {
+  width: 95px;
+  height: 45px;
+  box-shadow: none;
+}
+
+/* NAVBAR-ENDS */
+.card-holder {
+  /* width: 900px; */
+  width: fit-content;
+  height: fit-content;
+  /* border: 1px solid white: */
+  margin: 10rem auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.user-cards {
+  max-width: 200px;
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.user-cards p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.user-cards h4 {
+  font-weight: 100;
+  text-shadow: 1px 3px 3px black;
+}
+.user-cards a {
+  text-decoration: none;
+  color: rgb(12, 141, 141);
+}
+.user-cards:hover {
+  border: 1px solid aqua;
+  box-shadow: 0px 0px 10px aqua;
+}
+
+.img-holder {
+  width: 70px;
+  height: 70px;
+  border: 2px solid aqua;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px black;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+.img-holder img {
+  width: 100%;
+  height: 100%;
+}
+
+/* LOADER-STARTS */
+
+.bounce-holder {
+  width: 200px;
+  height: 150px;
+  margin: 15rem auto;
+  display: flex;
+  gap: 20px;
+  /* border:1px solid white; */
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(aqua, white 80%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px aqua;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+.ball2 {
+  animation-delay: 0.3s;
+}
+.ball3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(50px);
+  }
+  /* 75%{
+   transform:translateY(20px)
+ }
+} */
+  100% {
+    tranform: translatey(0px);
+  }
+}
